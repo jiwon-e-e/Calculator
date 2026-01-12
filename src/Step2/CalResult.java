@@ -15,6 +15,9 @@ class CalResult {
     void setResult(int a,int b,double ret, String sign){
         id++;
         String tempRet;
+        if (sign.equals("/")){
+            sign = "÷";
+        }
         if(ret%1==0){
             int intRet =(int) ret;
             tempRet = a + " "+sign+" " + b + " = "+intRet;
