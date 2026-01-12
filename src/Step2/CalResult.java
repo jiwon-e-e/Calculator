@@ -5,7 +5,7 @@ import java.util.Map;
 
 class CalResult {
     //속성
-    Map<Integer, String> hashMap = new HashMap<>();
+    private Map<Integer, String> hashMap = new HashMap<>();
     private int id;
 
     //생성자
@@ -41,6 +41,4 @@ class CalResult {
             System.out.println("존재하지 않는 id 입니다. ");
         }
     }
-
-
 }
