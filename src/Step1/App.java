@@ -3,7 +3,7 @@ package Step1;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
+public class App {
     public static void main(String[] args) {
         //scanner 변수 선언
         Scanner s = new Scanner(System.in);
