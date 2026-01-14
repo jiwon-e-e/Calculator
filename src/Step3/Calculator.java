@@ -39,8 +39,6 @@ public class Calculator<T extends Number> {
             }
             throw new IllegalArgumentException("기호 입력 실패");
         }
-
-
     }
 
     Calculator(Scanner s){
@@ -120,7 +118,6 @@ public class Calculator<T extends Number> {
             }
         }
     }
-
 
     //두번째 정수 입력받을 때 사용 num == 0, sign == / 인 상황을 잡기
     public boolean chkDivideZeroError(String sign, double num){
