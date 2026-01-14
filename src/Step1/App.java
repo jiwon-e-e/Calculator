@@ -12,26 +12,27 @@ public class App {
 
         //sign 을 입력받아 exit 과 같기 전까지는 무한루프 while(true)사용
         while (true){
-            System.out.println("## 기호를 입력하세요. ##");
+            System.out.println("## 기호를 입력하세요. ##"); //기호를 입력받음
             //sign 변수는 String 자료형에 저장
             String sign = s.next();
             //가장먼저 입력받은게 exit 인지 조건문을 통해 확인
             if(sign.equals("exit")){
-                System.out.println("계산기를 종료합니다.");
+                System.out.println("계산기를 종료합니다."); //입력받은 값이 exit 이라면 메시지 출력 후 종료
                 break;
             }
 
             //기호가 제대로 입력되었는지 확인, 아니라면 메시지 출력
-            String[] signList = {"+", "-", "x", "/"};
+            String[] signList = {"+", "-", "x", "/"}; //기호 모음 String
+            // 지역변수로 해야할지 전역변수로 해야할지 잘 모르겠다
             int chk1=0;
 
             for (int i=0;i<4;i++){
                 if (sign.equals(signList[i])) chk1=1;
-            }
+            } //입력받은 값이 signList 안에 없다면 잘못된 입력이므로 chk를 만들어주고
 
-            if (chk1==0) {
+            if (chk1==0) { //조건문을 사용하여 다시 기호입력 처음으로 돌아가게 만듦
                 System.out.println("가능한 입력이 아닙니다. 기호는 +, -, x, / 로 입력가능합니다.");
-                continue;
+                continue; //while 처음으로 돌아감
             }
 
             // 제대로 된 입력이 나올 때 까지 while 문으로 반복
@@ -46,11 +47,12 @@ public class App {
                     //입력받은 값이 자료형에 알맞은지 확인하고 아니라면 오류메시지 출력
                     System.out.println("정수만 입력하세요.");
                     //1/9 TIL 3.2 입력 무한반복 방지 buffer 비우기
-                    s.nextLine();
+                    s.nextLine(); //잘못입력했을때
                 }
             }
 
             // b도 a와 똑같은 형식으로 입력받음
+            // 대신 b는 조건이 하나 더 들어가므로 try 문 내에 조건 추가해주기
             int b=0;
             while (true){
                 try{
@@ -65,7 +67,7 @@ public class App {
                     break;
                 }catch (InputMismatchException e){
                     System.out.println("정수만 입력하세요.");
-                    s.nextLine();
+                    s.nextLine(); //무한반복 방지
                 }
             }
 
@@ -87,7 +89,6 @@ public class App {
                     break;
             }
         }
-
-        s.close();
+        s.close(); //스캐너 닫기
     }
 }
