@@ -5,8 +5,13 @@ import java.util.Scanner;
 
 public class Calculator {
 
-    Scanner s = new Scanner(System.in);
+    private Scanner s ;
+
+    Calculator(Scanner s){
+        this.s = s;
+    }
     CalResult c = new CalResult();
+
 
     //exit, list, 계산시작을 판별해서 main 에 가져다주기
     public int start(){

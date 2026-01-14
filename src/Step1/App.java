@@ -87,5 +87,7 @@ public class App {
                     break;
             }
         }
+
+        s.close();
     }
 }

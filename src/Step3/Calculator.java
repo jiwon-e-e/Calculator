@@ -6,10 +6,9 @@ import java.util.Scanner;
 import java.util.function.BiFunction;
 
 public class Calculator<T extends Number> {
+    private Scanner s;
 
-    Scanner s = new Scanner(System.in);
     CalResult c = new CalResult();
-
     public enum OperatorType{
 
 
@@ -42,6 +41,10 @@ public class Calculator<T extends Number> {
         }
 
 
+    }
+
+    Calculator(Scanner s){
+        this.s = s;
     }
 
     //exit, list, 계산시작을 판별해서 main 에 가져다주기
