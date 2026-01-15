@@ -47,10 +47,9 @@ public class ArithmeticCalculator<T extends Number> {
         }
     }
 
-
+    //생성자에서 스캐너 객체를 받아왔으므로 현재 클래스에서 사용할 수 있도록 함
     ArithmeticCalculator(Scanner s) {
         this.s = s;
-        //생성자에서 스캐너 객체를 받아왔으므로 현재 클래스에서 사용할 수 있도록 함
     }
 
     //exit, list, 계산시작, find 을 판별해서 main 에 가져다주기
@@ -114,7 +113,7 @@ public class ArithmeticCalculator<T extends Number> {
         System.out.println(firstNum + " "+ sign +" "+ secondNum + " = "+ ret); //출력
     }
 
-    //inputNum에 집어넣어도 되지만 일단.. 가독성을 위해 분리
+    //inputNum에 집어넣어도 되지만 일단.. 분리
     double read() {
         try {
             return Double.parseDouble(s.next());
