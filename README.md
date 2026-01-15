@@ -4,24 +4,27 @@
 
 ### Step1
 
+
 class 를 따로 생성하지 않고 App class 안에 모든 속성, 기능이 들어가있습니다.
 
 while문 안에 기호 -> 첫번째 정수 -> 두번째 정수 순서로 엔터로 구분지어 입력하면 결과값이 출력됩니다.
 
 종료조건: 기호 대신 exit 입력 
 
-### Step2
 
+### Step2
 class가 나뉘어 정의됩니다.
 
 App         
 
+
             main 함수, Scanner가 존재합니다.
 
-            Calculator 클래스의 c.start() (기능 선택부)를 반복문 내에서 호출합니다.
+            - Calculator 클래스의 c.start() (기능 선택부)를 반복문 내에서 호출합니다.
             
-            종료조건: 기능선택 시 exit 입력 
-            
+            - 종료조건: 기능선택 시 exit 입력 
+
+
             
 Calculator  
 
@@ -43,6 +46,7 @@ Calculator
             
             
 CalResult   
+
             HashMap 이 결과를 저장하는 용도로 선언되어있고, 데이터관리에 관한 메서드 정의
 
             - setResult id 값을 key로 하여 결과값을 string 형태로 저장 
@@ -53,8 +57,8 @@ CalResult
             
 
 ### Step3
-
 class가 나뉘어 정의됩니다. Step2와 유사하고 추가되거나 변경된 기능만 기재합니다.
+
 
 App         
 
@@ -89,4 +93,10 @@ Point
 
             hashMap의 value로 쓰임 연산식 String 과 결과값 double이 캡슐화 되어있습니다.
 
-            
+### 끝
+
+동작하는 프로그램을 제 손으로 만든건 처음이었는데 재밌고 유익했습니다 
+
+참고자료는 tistory에 쓴 타이밍마다 정리되어있어요 (1/9 ~ 1/14 에 있습니다) 조언, 고칠부분 편히 알려주시면 감사합니다
+
+tistory: https://kjw81024.tistory.com
