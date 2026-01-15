@@ -14,14 +14,18 @@ while문 안에 기호 -> 첫번째 정수 -> 두번째 정수 순서로 엔터�
 
 class가 나뉘어 정의됩니다.
 
-App         main 함수, Scanner가 존재합니다.
+App         
+
+            main 함수, Scanner가 존재합니다.
 
             Calculator 클래스의 c.start() (기능 선택부)를 반복문 내에서 호출합니다.
             
             종료조건: 기능선택 시 exit 입력 
             
             
-Calculator  - start     종료, 계산결과 조회, 계산 시작을 선택할 수 있습니다. 
+Calculator  
+
+            - start     종료, 계산결과 조회, 계산 시작을 선택할 수 있습니다. 
 
                         계산결과 조회-> getResult, ifRemove 메서드 호출 
                         
@@ -38,7 +42,8 @@ Calculator  - start     종료, 계산결과 조회, 계산 시작을 선택할 
             - calculate 숫자와 기호를 받아 계산 후 setResult 메서드 (저장) 호출
             
             
-CalResult   HashMap 이 결과를 저장하는 용도로 선언되어있고, 데이터관리에 관한 메서드 정의
+CalResult   
+            HashMap 이 결과를 저장하는 용도로 선언되어있고, 데이터관리에 관한 메서드 정의
 
             - setResult id 값을 key로 하여 결과값을 string 형태로 저장 
             
@@ -51,7 +56,9 @@ CalResult   HashMap 이 결과를 저장하는 용도로 선언되어있고, 데
 
 class가 나뉘어 정의됩니다. Step2와 유사하고 추가되거나 변경된 기능만 기재합니다.
 
-App         main 함수, Calculator 가 generic 형태로 선언됩니다.
+App         
+
+            main 함수, Calculator 가 generic 형태로 선언됩니다.
 
 
 ArithmeticCalculator 
@@ -71,11 +78,15 @@ ArithmeticCalculator
             - inputNum  string 으로 받음 
             
             
-CalResult   hashMap 의 value 로 Point class의 객체를 사용
+CalResult   
+
+            hashMap 의 value 로 Point class의 객체를 사용
 
             - compareNum    stream을 사용해 더 큰 결과값을 출력(printMethod 사용)
             
             
-Point       hashMap의 value로 쓰임 연산식 String 과 결과값 double이 캡슐화 되어있습니다.
+Point       
+
+            hashMap의 value로 쓰임 연산식 String 과 결과값 double이 캡슐화 되어있습니다.
 
             
