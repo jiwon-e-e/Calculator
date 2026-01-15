@@ -24,11 +24,11 @@ class CalResult {
 //            sign = "÷";
 //        }
         if(ret%1==0){ //결과값이 정수면
-            int intRet =(int) ret; //.0을 없애주기위해 int로 형변환
-            tempRet = a + " "+sign+" " + b + " = "+intRet;
-        }else{
-            tempRet = a + " "+sign+" " + b + " = "+ret;
-        } //tempRet 을 각각 저장 후
+            ret =(int) ret; //.0을 없애주기위해 int로 형변환
+        }
+
+        tempRet = a + " "+sign+" " + b + " = "+ret;
+         //tempRet 을 각각 저장 후
         hashMap.put(id, tempRet); //id와 함께 hashMap 에 저장
     }
 
