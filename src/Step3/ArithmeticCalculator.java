@@ -1,11 +1,9 @@
 package Step3;
 
-import java.util.HashMap;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.function.BiFunction;
 
-public class Calculator<T extends Number> {
+public class ArithmeticCalculator<T extends Number> {
     private Scanner s;
 
     CalResult c = new CalResult();
@@ -27,7 +25,7 @@ public class Calculator<T extends Number> {
             this.operatorType = operatorType;
         }
 
-         public Double compute(Double a, Double b) {
+         public Double calculate(Double a, Double b) {
             return operatorType.apply(a,b);
         }
 
@@ -41,7 +39,7 @@ public class Calculator<T extends Number> {
         }
     }
 
-    Calculator(Scanner s){
+    ArithmeticCalculator(Scanner s){
         this.s = s;
     }
 
@@ -96,7 +94,7 @@ public class Calculator<T extends Number> {
             secondNum = inputNum();
         }while (chkDivideZeroError(sign, secondNum));
 
-        double ret = op.compute(firstNum, secondNum);
+        double ret = op.calculate(firstNum, secondNum);
         c.setResult(firstNum,secondNum,ret, sign);
         System.out.println(firstNum + " "+ sign +" "+ secondNum + " = "+ ret);
     }
